@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-""" 0. Simple helper function
+"""
+Main file
 """
 
-def index_range(page, page_size):
-    if page <= 0 or page_size <= 0:
-        raise ValueError("Both page and page_size must be positive integers.")
+index_range = __import__('0-simple_helper_function').index_range
 
-    start_index = (page - 1) * page_size
-    end_index = start_index + page_size
+res = index_range(1, 7)
+print(type(res))
+print(res)
 
-    return start_index, end_index
+res = index_range(page=3, page_size=15)
+print(type(res))
+print(res)
