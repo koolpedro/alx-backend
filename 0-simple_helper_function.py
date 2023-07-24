@@ -2,9 +2,6 @@
 """ 0. Simple helper function
 """
 
-from typing import Tuple
-
-
 def index_range(page, page_size):
     if page <= 0 or page_size <= 0:
         raise ValueError("Both page and page_size must be positive integers.")
