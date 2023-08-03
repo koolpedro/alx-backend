@@ -25,7 +25,7 @@ def before_request():
 @app.route('/')
 def index():
     """Render the index page with a welcome message if logged in, or a default message if not logged in."""
-    return render_template('index.html', user=g.user)
+    return render_template('index.html', g.user)
 
 if __name__ == '__main__':
     app.run(debug=True)
