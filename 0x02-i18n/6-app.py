@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from flask import Flask, request, render_template
 
+
 app = Flask(__name__)
 
 SUPPORTED_LOCALES = ['en', 'fr', 'es', 'de']
+
 
 def get_locale():
     # Check if locale from URL parameters is supported
@@ -12,7 +14,9 @@ def get_locale():
         return url_locale
 
     # Check if locale from user settings is supported
-    user_settings_locale = get_user_settings_locale()  # Replace this with your function to get user settings
+    user_settings_locale = get_user_settings_locale()  
+
+    # Replace this with your function to get user settings
     if user_settings_locale and user_settings_locale in SUPPORTED_LOCALES:
         return user_settings_locale
 
@@ -33,4 +37,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port="5000")
-
