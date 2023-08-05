@@ -37,3 +37,18 @@ msgstr "Vous êtes connecté en tant que %(username)s"
 #: templates/7-index.html:13
 msgid "not_logged_in"
 msgstr "Vous n'êtes pas connecté."
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: fr\n"
+
+msgid "greeting"
+msgstr "Bonjour monde!"
+
+msgid "user_info"
+msgstr "Vous êtes connecté en tant que Spock."
+
+msgid "current_time_is"
+msgstr "Nous sommes le %(19 mars 2020 a 18:20:06.)s."
+
