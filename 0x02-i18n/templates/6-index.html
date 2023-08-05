@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Language Preference</title>
+</head>
+<body>
+    <h1>Language Preference</h1>
+    <form action="/" method="get">
+        <label for="locale">Select your preferred language:</label>
+        <select name="locale" id="locale">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+        </select>
+        <button type="submit">Save</button>
+    </form>
+    <p>Your preferred language is: <span id="preferred-language">{{ preferred_locale }}</span></p>
+</body>
+</html>
+
