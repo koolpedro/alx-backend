@@ -1,3 +1,3 @@
 ALX-BACKEND
 
-Author: Anyakorah Peter
+Anyakorah Peter
